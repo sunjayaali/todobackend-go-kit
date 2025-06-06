@@ -1,0 +1,4 @@
+steps:
+  - name: "gcr.io/cloud-builders/docker"
+    args: ["build", "-t", "gcr.io/robust-fin-240104/github.com/sunjayaali/todobackend-go-kit", "."]
+images: ["gcr.io/robust-fin-240104/github.com/sunjayaali/todobackend-go-kit:$COMMIT_SHA"]
